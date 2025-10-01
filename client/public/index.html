@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Calendar Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+    }
+    .navbar {
+      background: rgba(0,0,0,0.3);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    .navbar button {
+      background: #ff6b6b;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      color: #fff;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .card {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h2 {
+      margin-bottom: 1rem;
+    }
+    .card form input,
+    .card form textarea,
+    .card form button {
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    .card form input, .card form textarea {
+      outline: none;
+    }
+    .card form button {
+      background: #4cafef;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .card form button:hover {
+      background: #369de0;
+    }
+  </style>
+</head>
+<body>
+      <div id="root"></div>  <!-- ✅ important -->
+  <!-- <div class="navbar">
+    <h1>Google Calendar Dashboard</h1>
+    <button onclick="window.location.href='http://localhost:5000/auth/google'">
+      Sign in with Google
+    </button>
+  </div>
+
+  <div class="dashboard">
+    <div class="card">
+      <h2>Create Event</h2>
+      <form>
+        <input type="text" placeholder="Title" required>
+        <textarea placeholder="Description"></textarea>
+        <input type="datetime-local" required>
+        <input type="datetime-local" required>
+        <button type="submit">Create Event</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Create Task</h2>
+      <form>
+        <input type="text" placeholder="Task Title" required>
+        <textarea placeholder="Notes"></textarea>
+        <input type="datetime-local">
+        <button type="submit">Create Task</button>
+      </form>
+    </div>
+  </div> -->
+</body>
+</html>
